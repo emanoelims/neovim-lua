@@ -9,3 +9,4 @@ opt.swapfile = false
 -- Editor
 opt.number = true
 opt.linebreak = true
+opt.smartcase = true
