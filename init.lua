@@ -15,3 +15,4 @@ opt.splitright = true
 opt.splitbelow = true
 opt.ignorecase = true
 opt.colorcolumn = '80'
+opt.foldmethod = 'marker'
