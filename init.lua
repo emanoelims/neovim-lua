@@ -9,6 +9,7 @@ opt.swapfile = false
 -- Editor
 opt.number = true
 opt.hidden = true
+opt.history = 100
 opt.linebreak = true
 opt.smartcase = true
 opt.showmatch = true
