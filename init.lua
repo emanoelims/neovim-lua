@@ -4,3 +4,4 @@ require 'keymaps'
 
 -- Plugins
 require 'plugins.packer'
+require 'plugins.nvim-tree'
