@@ -2,6 +2,9 @@ local g = vim.g
 local opt = vim.opt
 local cmd = vim.cmd
 
+-- Leader
+g.mapleader = ','
+
 -- General
 opt.mouse = 'a'
 opt.swapfile = false
