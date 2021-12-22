@@ -18,4 +18,5 @@ opt.colorcolumn = '80'
 opt.foldmethod = 'marker'
 
 -- Tabs, indent
+opt.tabstop = 4
 opt.expandtab = true
