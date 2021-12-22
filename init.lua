@@ -26,3 +26,5 @@ opt.tabstop = 4
 opt.shiftwidth = 4
 opt.expandtab = true
 opt.smartindent = true
+
+cmd [[au BufWritePre * :%s/\s\+$//e]]
