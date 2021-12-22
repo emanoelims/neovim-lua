@@ -4,3 +4,4 @@ local cmd = vim.cmd
 
 -- General
 opt.mouse = 'a'
+opt.swapfile = false
