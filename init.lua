@@ -14,3 +14,4 @@ opt.showmatch = true
 opt.splitright = true
 opt.splitbelow = true
 opt.ignorecase = true
+opt.colorcolumn = '80'
