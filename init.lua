@@ -11,5 +11,6 @@ opt.number = true
 opt.linebreak = true
 opt.smartcase = true
 opt.showmatch = true
+opt.splitright = true
 opt.splitbelow = true
 opt.ignorecase = true
