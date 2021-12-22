@@ -9,6 +9,10 @@ g.mapleader = ','
 opt.mouse = 'a'
 opt.swapfile = false
 
+-- Theme
+opt.background = 'dark'
+cmd [[colorscheme gruvbox]]
+
 -- Editor
 opt.number = true
 opt.hidden = true
