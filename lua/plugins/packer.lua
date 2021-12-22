@@ -7,4 +7,11 @@ return require('packer').startup(function()
   use 'morhetz/gruvbox'
   use 'kyazdani42/nvim-tree.lua'
   use 'lukas-reineke/indent-blankline.nvim'
+  use {
+    'windwp/nvim-autopairs',
+    config = function()
+      require('nvim-autopairs').setup()
+    end
+  }
+
 end)
