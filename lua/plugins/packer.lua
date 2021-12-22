@@ -6,4 +6,5 @@ return require('packer').startup(function()
 
   use 'morhetz/gruvbox'
   use 'kyazdani42/nvim-tree.lua'
+  use 'lukas-reineke/indent-blankline.nvim'
 end)
