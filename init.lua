@@ -10,6 +10,7 @@ opt.swapfile = false
 opt.number = true
 opt.hidden = true
 opt.history = 100
+opt.synmaxcol = 240
 opt.linebreak = true
 opt.smartcase = true
 opt.showmatch = true
