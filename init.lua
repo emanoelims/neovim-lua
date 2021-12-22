@@ -11,3 +11,4 @@ opt.number = true
 opt.linebreak = true
 opt.smartcase = true
 opt.showmatch = true
+opt.splitbelow = true
