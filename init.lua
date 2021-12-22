@@ -16,3 +16,6 @@ opt.splitbelow = true
 opt.ignorecase = true
 opt.colorcolumn = '80'
 opt.foldmethod = 'marker'
+
+-- Tabs, indent
+opt.expandtab = true
