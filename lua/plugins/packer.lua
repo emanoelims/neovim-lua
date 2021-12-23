@@ -20,6 +20,13 @@ return require('packer').startup(function()
     'nvim-lualine/lualine.nvim',
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
   }
+  use {
+    'lewis6991/gitsigns.nvim',
+    requires = { 'nvim-lua/plenary.nvim' },
+    config = function()
+      require('gitsigns').setup()
+    end
+  }
 
   use {
     'hrsh7th/nvim-cmp',
