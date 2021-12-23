@@ -11,7 +11,7 @@ opt.swapfile = false
 
 -- Theme
 opt.background = 'dark'
-cmd [[colorscheme gruvbox]]
+cmd [[colorscheme nvcode]]
 
 -- Editor
 opt.number = true
