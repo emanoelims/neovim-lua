@@ -5,6 +5,7 @@ require 'keymaps'
 -- Plugins
 require 'plugins.vista'
 require 'plugins.packer'
+require 'plugins.nvim-cmp'
 require 'plugins.nvim-tree'
 require 'plugins.nvim-lspconfig'
 require 'plugins.indent-blankline'
