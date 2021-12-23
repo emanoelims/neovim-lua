@@ -5,6 +5,7 @@ return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
 
   use 'morhetz/gruvbox'
+  use 'liuchengxu/vista.vim'
   use 'kyazdani42/nvim-tree.lua'
   use 'kyazdani42/nvim-web-devicons'
   use 'lukas-reineke/indent-blankline.nvim'
