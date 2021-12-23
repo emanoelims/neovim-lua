@@ -6,6 +6,7 @@ return require('packer').startup(function()
 
   use 'morhetz/gruvbox'
   use 'kyazdani42/nvim-tree.lua'
+  use 'kyazdani42/nvim-web-devicons'
   use 'lukas-reineke/indent-blankline.nvim'
   use {
     'windwp/nvim-autopairs',
