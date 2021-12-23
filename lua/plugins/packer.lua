@@ -8,6 +8,7 @@ return require('packer').startup(function()
   use 'liuchengxu/vista.vim'
   use 'kyazdani42/nvim-tree.lua'
   use 'kyazdani42/nvim-web-devicons'
+  use 'nvim-treesitter/nvim-treesitter'
   use 'lukas-reineke/indent-blankline.nvim'
   use {
     'windwp/nvim-autopairs',
