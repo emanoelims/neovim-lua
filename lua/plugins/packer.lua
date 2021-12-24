@@ -24,6 +24,7 @@ return require('packer').startup(function()
   use 'windwp/nvim-autopairs'
 
   -- Git
+  use 'tpope/vim-fugitive'
   use 'lewis6991/gitsigns.nvim'
 
   -- LSP
