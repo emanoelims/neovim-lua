@@ -23,6 +23,7 @@ opt.history = 100
 opt.synmaxcol = 240
 opt.linebreak = true
 opt.smartcase = true
+opt.showmode = false
 opt.showmatch = true
 opt.lazyredraw = true
 opt.splitright = true
