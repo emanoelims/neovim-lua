@@ -11,7 +11,10 @@ opt.swapfile = false
 
 -- Theme
 opt.background = 'dark'
-cmd [[colorscheme nvcode]]
+opt.termguicolors = true
+cmd [[colorscheme omni]]
+
+g.nvcode_termcolors=256
 
 -- Editor
 opt.number = true
