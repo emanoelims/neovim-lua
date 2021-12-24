@@ -12,6 +12,9 @@ return require('packer').startup(function()
   -- Visual
   use 'nvim-telescope/telescope.nvim'
 
+  -- Editor
+  use 'pbrisbin/vim-mkdir'
+
   use 'liuchengxu/vista.vim'
   use 'kyazdani42/nvim-tree.lua'
   use 'kyazdani42/nvim-web-devicons'
