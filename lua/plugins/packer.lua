@@ -11,34 +11,22 @@ return require('packer').startup(function()
   use 'christianchiarulli/nvcode-color-schemes.vim'
 
   -- Visual
+  use 'kyazdani42/nvim-tree.lua'
+  use 'nvim-lualine/lualine.nvim'
+  use 'kyazdani42/nvim-web-devicons'
   use 'nvim-telescope/telescope.nvim'
+  use 'nvim-treesitter/nvim-treesitter'
+  use 'lukas-reineke/indent-blankline.nvim'
 
   -- Editor
   use 'pbrisbin/vim-mkdir'
-
   use 'liuchengxu/vista.vim'
-  use 'kyazdani42/nvim-tree.lua'
-  use 'kyazdani42/nvim-web-devicons'
-  use 'nvim-treesitter/nvim-treesitter'
-  use 'lukas-reineke/indent-blankline.nvim'
-  use {
-    'windwp/nvim-autopairs',
-    config = function()
-      require('nvim-autopairs').setup()
-    end
-  }
-  use {
-    'nvim-lualine/lualine.nvim',
-    requires = {'kyazdani42/nvim-web-devicons', opt = true}
-  }
-  use {
-    'lewis6991/gitsigns.nvim',
-    requires = { 'nvim-lua/plenary.nvim' },
-    config = function()
-      require('gitsigns').setup()
-    end
-  }
+  use 'windwp/nvim-autopairs'
 
+  -- Git
+  use 'lewis6991/gitsigns.nvim'
+
+  -- LSP
   use {
     'hrsh7th/nvim-cmp',
 
