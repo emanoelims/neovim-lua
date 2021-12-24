@@ -9,6 +9,9 @@ return require('packer').startup(function()
   use 'haishanh/night-owl.vim'
   use 'christianchiarulli/nvcode-color-schemes.vim'
 
+  -- Visual
+  use 'nvim-telescope/telescope.nvim'
+
   use 'liuchengxu/vista.vim'
   use 'kyazdani42/nvim-tree.lua'
   use 'kyazdani42/nvim-web-devicons'
