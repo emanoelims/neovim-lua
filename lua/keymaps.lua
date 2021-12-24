@@ -19,3 +19,6 @@ map('n', '<leader>r', ':NvimTreeRefresh<CR>', opts)
 map('n', '<leader>n', ':NvimTreeFindFile<CR>', opts)
 
 map('n', '<C-m>', ':Vista!!<CR>', opts)
+
+map("n", "<Leader><Leader>", ":Telescope find_files<CR>", opts)
+map("n", "<C-p>", ":Telescope buffers<CR>", opts)
