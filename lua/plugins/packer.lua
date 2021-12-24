@@ -4,12 +4,16 @@ cmd [[packadd packer.nvim]]
 return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
 
+  -- Theme
+  use 'getomni/neovim'
+  use 'haishanh/night-owl.vim'
+  use 'christianchiarulli/nvcode-color-schemes.vim'
+
   use 'liuchengxu/vista.vim'
   use 'kyazdani42/nvim-tree.lua'
   use 'kyazdani42/nvim-web-devicons'
   use 'nvim-treesitter/nvim-treesitter'
   use 'lukas-reineke/indent-blankline.nvim'
-  use 'christianchiarulli/nvcode-color-schemes.vim'
   use {
     'windwp/nvim-autopairs',
     config = function()
