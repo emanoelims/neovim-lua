@@ -19,6 +19,7 @@ return require('packer').startup(function()
   use 'lukas-reineke/indent-blankline.nvim'
 
   -- Editor
+  use 'tpope/vim-surround'
   use 'pbrisbin/vim-mkdir'
   use 'liuchengxu/vista.vim'
   use 'windwp/nvim-autopairs'
