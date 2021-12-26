@@ -3,6 +3,7 @@ cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
+  use 'nvim-lua/popup.nvim'
   use 'nvim-lua/plenary.nvim'
 
   -- Theme
@@ -23,8 +24,8 @@ return require('packer').startup(function()
   use 'tpope/vim-surround'
   use 'liuchengxu/vista.vim'
   use 'windwp/nvim-autopairs'
-  use "windwp/nvim-ts-autotag"
-  use "norcalli/nvim-colorizer.lua"
+  use 'windwp/nvim-ts-autotag'
+  use 'norcalli/nvim-colorizer.lua'
 
   -- Git
   use 'tpope/vim-fugitive'
