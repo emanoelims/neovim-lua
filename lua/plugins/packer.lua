@@ -23,6 +23,7 @@ return require('packer').startup(function()
   use 'pbrisbin/vim-mkdir'
   use 'liuchengxu/vista.vim'
   use 'windwp/nvim-autopairs'
+  use "norcalli/nvim-colorizer.lua"
 
   -- Git
   use 'tpope/vim-fugitive'
