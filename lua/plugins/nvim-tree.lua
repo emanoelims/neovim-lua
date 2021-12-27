@@ -20,6 +20,10 @@ g.nvim_tree_icons = {
 require('nvim-tree').setup {
   open_on_setup = true,
   update_cwd = true,
+  update_focused_file = {
+    enable = true,
+    update_cwd = true
+  },
   view = {
     width = 32,
     auto_resize = true

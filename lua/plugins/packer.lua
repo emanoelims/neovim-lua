@@ -25,6 +25,7 @@ return require('packer').startup(function()
   use 'liuchengxu/vista.vim'
   use 'windwp/nvim-autopairs'
   use 'windwp/nvim-ts-autotag'
+  use 'ahmedkhalf/project.nvim'
   use 'akinsho/toggleterm.nvim'
   use 'norcalli/nvim-colorizer.lua'
 
