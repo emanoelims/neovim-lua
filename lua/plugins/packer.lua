@@ -23,6 +23,7 @@ return require('packer').startup(function()
   -- Editor
   use 'pbrisbin/vim-mkdir'
   use 'tpope/vim-surround'
+  use 'Pocco81/TrueZen.nvim'
   use 'liuchengxu/vista.vim'
   use 'windwp/nvim-autopairs'
   use 'windwp/nvim-ts-autotag'
