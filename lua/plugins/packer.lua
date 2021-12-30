@@ -25,11 +25,12 @@ return require('packer').startup(function()
   use 'tpope/vim-surround'
   use 'Pocco81/TrueZen.nvim'
   use 'liuchengxu/vista.vim'
+  use 'nathom/filetype.nvim'
   use 'windwp/nvim-autopairs'
   use 'windwp/nvim-ts-autotag'
-  use 'terrortylor/nvim-comment'
   use 'ahmedkhalf/project.nvim'
   use 'akinsho/toggleterm.nvim'
+  use 'terrortylor/nvim-comment'
   use 'norcalli/nvim-colorizer.lua'
 
   -- Git
