@@ -1,5 +1,5 @@
 local opts = { noremap = true, silent = true }
-local on_attach = function(_, bufnr)
+local on_attach = function(client, bufnr)
   local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
   local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
 
@@ -20,6 +20,18 @@ local on_attach = function(_, bufnr)
   buf_set_keymap('n', ']d', '<cmd>lua vim.lsp.diagnostic.goto_next()<CR>', opts)
   buf_set_keymap('n', '<space>q', '<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', opts)
   buf_set_keymap('n', '<space>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
+
+  if client.name == 'tsserver' then
+    client.resolved_capabilities.document_formatting = false
+
+    local ts_utils = require 'nvim-lsp-ts-utils'
+    ts_utils.setup({})
+    ts_utils.setup_client(client)
+
+    buf_set_keymap('n', 'gs', ':TSLspOrganize<CR>', opts)
+    buf_set_keymap('n', 'gi', ':TSLspRenameFile<CR>', opts)
+    buf_set_keymap('n', 'go', ':TSLspImportAll<CR>', opts)
+  end
 end
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()

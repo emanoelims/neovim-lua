@@ -50,5 +50,7 @@ return require('packer').startup(function()
 
     'L3MON4D3/LuaSnip',
     'saadparwaiz1/cmp_luasnip',
+    'jose-elias-alvarez/null-ls.nvim',
+    'jose-elias-alvarez/nvim-lsp-ts-utils',
   }
 end)
