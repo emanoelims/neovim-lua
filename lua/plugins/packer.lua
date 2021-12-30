@@ -12,6 +12,7 @@ return require('packer').startup(function()
   use 'christianchiarulli/nvcode-color-schemes.vim'
 
   -- Visual
+  use 'onsails/lspkind-nvim'
   use 'kyazdani42/nvim-tree.lua'
   use 'nvim-lualine/lualine.nvim'
   use 'kyazdani42/nvim-web-devicons'

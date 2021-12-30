@@ -5,6 +5,7 @@ require 'keymaps'
 -- Plugins
 require 'plugins.vista'
 require 'plugins.packer'
+require 'plugins.lspkind'
 require 'plugins.project'
 require 'plugins.lualine'
 require 'plugins.gitsigns'
