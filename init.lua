@@ -4,6 +4,7 @@ require 'keymaps'
 
 -- Plugins
 require 'plugins.vista'
+require 'plugins.nullls'
 require 'plugins.packer'
 require 'plugins.comment'
 require 'plugins.truezen'
