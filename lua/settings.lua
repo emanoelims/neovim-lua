@@ -38,7 +38,6 @@ opt.shiftwidth = 4
 opt.expandtab = true
 opt.smartindent = true
 
-cmd [[au BufWritePre * :%s/\s\+$//e]]
 cmd [[au BufEnter * set fo-=c fo-=r fo-=o]]
 cmd [[autocmd FileType text,markdown,html,xhtml,javascript setlocal cc=0]]
 cmd [[
