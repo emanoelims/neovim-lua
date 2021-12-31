@@ -27,6 +27,7 @@ return require 'packer'.startup(function()
   use 'lukas-reineke/indent-blankline.nvim'
 
   -- Editor
+  use 'tpope/vim-sleuth'
   use 'pbrisbin/vim-mkdir'
   use 'tpope/vim-surround'
   use 'Pocco81/TrueZen.nvim'
