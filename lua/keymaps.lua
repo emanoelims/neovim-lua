@@ -15,6 +15,3 @@ map('n', '<C-l>', '<C-w>l', opts)
 map('n', '<leader>q', ':qa!<CR>', opts)
 
 map('n', '<C-m>', ':Vista!!<CR>', opts)
-
-map("n", "<Leader><Leader>", ":Telescope find_files<CR>", opts)
-map("n", "<C-p>", ":Telescope buffers<CR>", opts)
