@@ -14,10 +14,6 @@ map('n', '<C-l>', '<C-w>l', opts)
 
 map('n', '<leader>q', ':qa!<CR>', opts)
 
-map('n', '<C-n>', ':NvimTreeToggle<CR>', opts)
-map('n', '<leader>r', ':NvimTreeRefresh<CR>', opts)
-map('n', '<leader>n', ':NvimTreeFindFile<CR>', opts)
-
 map('n', '<C-m>', ':Vista!!<CR>', opts)
 
 map("n", "<Leader><Leader>", ":Telescope find_files<CR>", opts)
