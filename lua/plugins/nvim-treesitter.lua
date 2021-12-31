@@ -11,6 +11,10 @@ treesitter.setup {
   autotag = {
     enable = true,
   },
+  indent = {
+    enable = true,
+    disable = {'yaml', 'python'}
+  },
   ensure_installed = {
     'lua',
     'vim',
