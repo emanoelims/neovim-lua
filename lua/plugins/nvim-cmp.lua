@@ -1,6 +1,9 @@
-local cmp = require'cmp'
-local lspkind = require 'lspkind'
-local luasnip = require 'luasnip'
+local cmp_ok, cmp = pcall(require, 'cmp')
+local lspkind_ok, lspkind = pcall(require, 'lspkind')
+local luasnip_ok, luasnip = pcall(require, 'luasnip')
+if not cmp_ok or not lspkind_ok or not luasnip_ok  then
+  return
+end
 
 local has_words_before = function()
   local line, col = unpack(vim.api.nvim_win_get_cursor(0))
