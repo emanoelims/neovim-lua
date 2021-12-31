@@ -1,6 +1,9 @@
-local null_ls = require 'null-ls'
+local status_ok, null_ls = pcall(require, 'null-ls')
+if not status_ok then
+  return
+end
 
-null_ls.setup({
+null_ls.setup {
   sources = {
     null_ls.builtins.diagnostics.eslint_d,
     null_ls.builtins.code_actions.eslint_d,
@@ -11,4 +14,4 @@ null_ls.setup({
       vim.cmd('autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()')
     end
   end,
-})
+}

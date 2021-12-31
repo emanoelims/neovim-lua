@@ -24,8 +24,12 @@ local on_attach = function(client, bufnr)
   if client.name == 'tsserver' then
     client.resolved_capabilities.document_formatting = false
 
-    local ts_utils = require 'nvim-lsp-ts-utils'
-    ts_utils.setup({})
+    local status_ok, ts_utils = pcall(require, 'nvim-lsp-ts-utils')
+    if not status_ok then
+      return
+    end
+
+    ts_utils.setup {}
     ts_utils.setup_client(client)
 
     buf_set_keymap('n', 'gs', ':TSLspOrganize<CR>', opts)
@@ -34,10 +38,19 @@ local on_attach = function(client, bufnr)
   end
 end
 
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities = require 'cmp_nvim_lsp'.update_capabilities(capabilities)
+local status_ok, cmp_nvim_lsp = pcall(require, 'cmp_nvim_lsp')
+if not status_ok then
+  return
+end
 
-local lsp_installer = require("nvim-lsp-installer")
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities = cmp_nvim_lsp.update_capabilities(capabilities)
+
+local status_ok, lsp_installer = pcall(require, 'nvim-lsp-installer')
+if not status_ok then
+  return
+end
+
 lsp_installer.on_server_ready(
   function (server)
     local opts = {
