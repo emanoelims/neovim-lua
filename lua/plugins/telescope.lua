@@ -3,11 +3,7 @@ if not status_ok then
   return
 end
 
-telescope.setup {
-  defaults = {
-    file_ignore_patterns = {'node_modules', 'dist'}
-  }
-}
+telescope.setup {}
 
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
