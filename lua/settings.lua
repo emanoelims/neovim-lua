@@ -17,6 +17,7 @@ cmd [[colorscheme omni]]
 g.nvcode_termcolors=256
 
 -- Editor
+opt.wrap = false
 opt.number = true
 opt.hidden = true
 opt.history = 100
