@@ -4,7 +4,8 @@ if not status_ok then
 end
 
 lspkind.init {
-  with_text = true,
+  mode = 'symbol',
+  preset = 'codicons',
   symbol_map = {
     Text = "",
     Method = "",
@@ -18,7 +19,7 @@ lspkind.init {
     Property = "ﰠ",
     Unit = "塞",
     Value = "",
-    Enum = "",
+    Enum = "",
     Keyword = "",
     Snippet = "",
     Color = "",
@@ -30,6 +31,6 @@ lspkind.init {
     Struct = "פּ",
     Event = "",
     Operator = "",
-    TypeParameter = ""
+    TypeParameter = ""
   },
 }
