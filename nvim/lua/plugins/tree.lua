@@ -1,22 +1,3 @@
-local g = vim.g
-
-g.nvim_tree_quit_on_open = 0
-g.nvim_tree_indent_markers = 1
-g.nvim_tree_git_hl = 1
-g.nvim_tree_highlight_opened_files = 1
-g.nvim_tree_disable_window_picker = 1
-g.nvim_tree_respect_buf_cwd = 1
-g.nvim_tree_width_allow_resize  = 1
-g.nvim_tree_show_icons = {
-  git = 1,
-  folders = 1,
-  files = 1
-}
-
-g.nvim_tree_icons = {
-	default = "‣ "
-}
-
 local status_ok, nvim_tree = pcall(require, 'nvim-tree')
 if not status_ok then
   return
@@ -31,7 +12,6 @@ nvim_tree.setup {
   },
   view = {
     width = 32,
-    auto_resize = true,
     hide_root_folder = true,
   },
   filters = {
@@ -42,6 +22,32 @@ nvim_tree.setup {
     enable = true,
     ignore = true,
   },
+  respect_buf_cwd = true,
+  actions = {
+    open_file = {
+      quit_on_open = false,
+      window_picker = {
+        enable = true
+      }
+    }
+  },
+  renderer = {
+    indent_markers = {
+      enable = true
+    },
+    highlight_git = true,
+    highlight_opened_files = 'icon',
+    icons = {
+      glyphs = {
+        default = '‣ ',
+      },
+      show = {
+        git = true,
+        folder = true,
+        file = true
+      }
+    }
+  }
 }
 
 local map = vim.api.nvim_set_keymap
